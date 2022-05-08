@@ -1,6 +1,8 @@
 package net.isaacj.tfw;
 
 import net.fabricmc.api.ModInitializer;
+import net.isaacj.tfw.block.ModBlocks;
+import net.isaacj.tfw.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,8 +15,7 @@ public class TFWmod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
-
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
