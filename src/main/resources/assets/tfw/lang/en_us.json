@@ -5,6 +5,10 @@
 
   "block.tfw.redstone_infused_obsidian": "Redstone Infused Obsidian",
   "block.tfw.compact_snow": "Compact Snow",
+  "block.tfw.syph_log": "Syph Log",
+  "block.tfw.syph_planks": "Syph Planks",
+  "block.tfw.syph_leaves": "Syph Leaves",
+  "block.tfw.blue_syph_leaves": "Blue Syph Leaves",
 
   "itemGroup.tfw.tfw": "TFW"
 }

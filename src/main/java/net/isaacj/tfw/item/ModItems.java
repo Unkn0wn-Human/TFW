@@ -10,11 +10,9 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
 
 
-    //public static final Item REDSTONE_INFUSED_OBSIDIAN = registerItem("redstone_infused_obsidian",
-            //new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-
     public static final Item SYPH_NUT = registerItem("syph_nut",
-            new Item(new FabricItemSettings().group(ModItemGroups.TFW)));
+            new Item(new FabricItemSettings().food(ModFoodComponent.SYPH_NUT).group(ModItemGroups.TFW)));
+
 
 
     private static Item registerItem(String name, Item item){

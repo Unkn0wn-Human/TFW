@@ -6,7 +6,9 @@ import net.isaacj.tfw.TFWmod;
 import net.isaacj.tfw.item.ModItemGroups;
 import net.isaacj.tfw.item.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.Material;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -19,8 +21,25 @@ public class ModBlocks {
     public static final Block REDSTONE_INFUSED_OBSIDIAN = registerblock("redstone_infused_obsidian",
             new Block(FabricBlockSettings.of(Material.STONE).strength(50f, 6000f ).requiresTool()),
                     ModItemGroups.TFW);
+
     public static final Block COMPACT_SNOW = registerblock("compact_snow",
             new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).sounds(BlockSoundGroup.SNOW).strength(0.4f, 2f ).requiresTool()),
+            ModItemGroups.TFW);
+
+    public static final Block SYPH_LOG = registerblock("syph_log",
+            new PillarBlock(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(2f, 10f )),
+            ModItemGroups.TFW);
+
+    public static final Block SYPH_PLANKS = registerblock("syph_planks",
+            new PillarBlock(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(2f, 15f )),
+            ModItemGroups.TFW);
+
+    public static final Block SYPH_LEAVES = registerblock("syph_leaves",
+            new LeavesBlock(FabricBlockSettings.of(Material.LEAVES).sounds(BlockSoundGroup.GRASS).nonOpaque().strength(0.2f, 1f )),
+            ModItemGroups.TFW);
+
+    public static final Block BLUE_SYPH_LEAVES = registerblock("blue_syph_leaves",
+            new LeavesBlock(FabricBlockSettings.of(Material.LEAVES).sounds(BlockSoundGroup.GRASS).nonOpaque().strength(0.2f, 1f )),
             ModItemGroups.TFW);
 
 
