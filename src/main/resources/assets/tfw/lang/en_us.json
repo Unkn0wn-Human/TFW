@@ -9,6 +9,12 @@
   "block.tfw.syph_planks": "Syph Planks",
   "block.tfw.syph_leaves": "Syph Leaves",
   "block.tfw.blue_syph_leaves": "Blue Syph Leaves",
+  "block.tfw.syph_slab": "Syph Slab",
+  "block.tfw.syph_stairs": "Syph Stairs",
+  "block.tfw.syph_pressure_plate": "Syph Pressure Plate",
+  "block.tfw.syph_fence": "Syph Fence",
+  "block.tfw.syph_fence_gate": "Syph Gate",
+  "block.tfw.syph_door": "Syph Door",
 
   "itemGroup.tfw.tfw": "TFW"
 }
