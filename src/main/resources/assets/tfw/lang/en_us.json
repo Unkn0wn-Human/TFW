@@ -15,6 +15,13 @@
   "block.tfw.syph_fence": "Syph Fence",
   "block.tfw.syph_fence_gate": "Syph Gate",
   "block.tfw.syph_door": "Syph Door",
+  "block.tfw.blue_mumbade": "Blue Mumbade",
+  "block.tfw.purple_mumbade": "Purple Mumbade",
+  "block.tfw.gold_mumbade": "Gold Mumbade",
+  "block.tfw.potted_gold_mumbade": "Potted Gold Mumbade",
+  "block.tfw.potted_blue_mumbade": "Potted Blue Mumbade",
+  "block.tfw.potted_purple_mumbade": "Potted Purple Mumbade",
+
 
   "itemGroup.tfw.tfw": "TFW"
 }
