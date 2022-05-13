@@ -5,19 +5,31 @@
 
   "block.tfw.redstone_infused_obsidian": "Redstone Infused Obsidian",
   "block.tfw.compact_snow": "Compact Snow",
+
   "block.tfw.syph_log": "Syph Log",
   "block.tfw.syph_planks": "Syph Planks",
+  "block.tfw.syph_wood": "Syph Wood",
+  "block.tfw.stripped_syph_log": "Stripped Syph Log",
+  "block.tfw.stripped_syph_wood": "Stripped Syph Wood",
+
   "block.tfw.syph_leaves": "Syph Leaves",
   "block.tfw.blue_syph_leaves": "Blue Syph Leaves",
+
+  "block.tfw.syph_sapling": "Syph Sapling",
+  "block.tfw.blue_syph_sapling": "Blue Syph Sapling",
+
+
   "block.tfw.syph_slab": "Syph Slab",
   "block.tfw.syph_stairs": "Syph Stairs",
   "block.tfw.syph_pressure_plate": "Syph Pressure Plate",
   "block.tfw.syph_fence": "Syph Fence",
   "block.tfw.syph_fence_gate": "Syph Gate",
   "block.tfw.syph_door": "Syph Door",
+
   "block.tfw.blue_mumbade": "Blue Mumbade",
   "block.tfw.purple_mumbade": "Purple Mumbade",
   "block.tfw.gold_mumbade": "Gold Mumbade",
+
   "block.tfw.potted_gold_mumbade": "Potted Gold Mumbade",
   "block.tfw.potted_blue_mumbade": "Potted Blue Mumbade",
   "block.tfw.potted_purple_mumbade": "Potted Purple Mumbade",

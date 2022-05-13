@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "tfw:syph_log"
-
+    "#tfw:syph_logs"
   ]
 }

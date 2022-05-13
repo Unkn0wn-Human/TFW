@@ -3,12 +3,11 @@ package net.isaacj.tfw.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.isaacj.tfw.TFWmod;
-import net.isaacj.tfw.block.custom.ModDoorBlock;
-import net.isaacj.tfw.block.custom.ModPressurePlateBlock;
-import net.isaacj.tfw.block.custom.ModStairsBlock;
-import net.isaacj.tfw.block.custom.RedstoneInfusedObsidianBlock;
+import net.isaacj.tfw.block.custom.*;
 import net.isaacj.tfw.item.ModItemGroups;
 import net.isaacj.tfw.item.ModItems;
+import net.isaacj.tfw.world.feature.tree.BlueSyphSaplingGenerator;
+import net.isaacj.tfw.world.feature.tree.SyphSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
@@ -31,20 +30,33 @@ public class ModBlocks {
             ModItemGroups.TFW);
 
     public static final Block SYPH_LOG = registerBlock("syph_log",
-            new PillarBlock(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(2f, 10f )),
-            ModItemGroups.TFW);
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroups.TFW);
 
     public static final Block SYPH_PLANKS = registerBlock("syph_planks",
-            new PillarBlock(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(2f, 15f )),
-            ModItemGroups.TFW);
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)),ModItemGroups.TFW);
+
+    public static final Block SYPH_WOOD = registerBlock("syph_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_WOOD)),ModItemGroups.TFW);
+
+    public static final Block STRIPPED_SYPH_LOG = registerBlock("stripped_syph_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_LOG)),ModItemGroups.TFW);
+
+    public static final Block STRIPPED_SYPH_WOOD = registerBlock("stripped_syph_wood",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.STRIPPED_OAK_WOOD)),ModItemGroups.TFW);
 
     public static final Block SYPH_LEAVES = registerBlock("syph_leaves",
-            new LeavesBlock(FabricBlockSettings.of(Material.LEAVES).sounds(BlockSoundGroup.GRASS).nonOpaque().strength(0.2f, 1f )),
-            ModItemGroups.TFW);
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroups.TFW);
 
     public static final Block BLUE_SYPH_LEAVES = registerBlock("blue_syph_leaves",
-            new LeavesBlock(FabricBlockSettings.of(Material.LEAVES).sounds(BlockSoundGroup.GRASS).nonOpaque().strength(0.2f, 1f )),
-            ModItemGroups.TFW);
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroups.TFW);
+
+    public static final Block SYPH_SAPLING = registerBlock("syph_sapling",
+            new ModSaplingBlock(new SyphSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroups.TFW);
+
+    public static final Block BLUE_SYPH_SAPLING = registerBlock("blue_syph_sapling",
+            new ModSaplingBlock(new BlueSyphSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroups.TFW);
 
     public static final Block SYPH_STAIRS = registerBlock("syph_stairs",
             new ModStairsBlock(ModBlocks.SYPH_PLANKS.getDefaultState(),FabricBlockSettings.of(Material.WOOD).
