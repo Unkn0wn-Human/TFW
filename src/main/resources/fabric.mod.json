@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.isaacj.tfw.TFWClient"
+    ],
+    "terrablender": [
+      "net.isaacj.tfw.TFWmod"
     ]
   },
   "mixins": [

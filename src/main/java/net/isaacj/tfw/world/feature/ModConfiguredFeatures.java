@@ -8,10 +8,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.TreeFeatureConfig;
+import net.minecraft.util.registry.RegistryEntry;
+import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.foliage.PineFoliagePlacer;
@@ -20,24 +18,26 @@ import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
+import javax.imageio.spi.RegisterableService;
+
 public class ModConfiguredFeatures {
 
-    public static final ConfiguredFeature<TreeFeatureConfig, ?> SYPH_TREE =
-            register("syph_tree", Feature.TREE.configure(new TreeFeatureConfig.Builder(
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SYPH_TREE =
+            ConfiguredFeatures.register("syph_tree", Feature.TREE, new TreeFeatureConfig.Builder(
                     BlockStateProvider.of(ModBlocks.SYPH_LOG),
                     new StraightTrunkPlacer(3, 6, 2),
                     BlockStateProvider.of(Blocks.AIR),
                     new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 3),
-                    new TwoLayersFeatureSize(1, 0, 2)).build()));
+                    new TwoLayersFeatureSize(1, 0, 2)).build());
 
 
-    public static final ConfiguredFeature<TreeFeatureConfig, ?> BLUE_SYPH_TREE =
-            register("blue_syph_tree", Feature.TREE.configure(new TreeFeatureConfig.Builder(
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BLUE_SYPH_TREE =
+            ConfiguredFeatures.register("blue_syph_tree", Feature.TREE, new TreeFeatureConfig.Builder(
                     BlockStateProvider.of(ModBlocks.SYPH_LOG),
                     new StraightTrunkPlacer(2, 3, 1),
                     BlockStateProvider.of(Blocks.AIR),
                     new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 2),
-                    new TwoLayersFeatureSize(1, 0, 2)).build()));
+                    new TwoLayersFeatureSize(1, 0, 2)).build());
 
 
 
