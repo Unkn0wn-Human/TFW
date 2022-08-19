@@ -3,24 +3,33 @@ package net.isaacj.tfw.world.feature;
 import net.isaacj.tfw.TFWmod;
 import net.isaacj.tfw.block.ModBlocks;
 import net.isaacj.tfw.block.custom.ModForkingTrunkPlacer;
+import net.isaacj.tfw.world.feature.config.SnowLayersConfig;
+import net.isaacj.tfw.world.feature.terrain.SnowLayersFeature;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
+import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.foliage.PineFoliagePlacer;
 import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.stateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
+import org.lwjgl.system.CallbackI;
 
 import javax.imageio.spi.RegisterableService;
 
 public class ModConfiguredFeatures {
+
+
+
 
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SYPH_TREE =
             ConfiguredFeatures.register("syph_tree", Feature.TREE, new TreeFeatureConfig.Builder(
@@ -44,10 +53,9 @@ public class ModConfiguredFeatures {
 
 
 
-    public static <FC extends FeatureConfig> ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> configuredFeature) {
-        return Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, new Identifier(TFWmod.MOD_ID, name),
-                configuredFeature);
-    }
+
+
+
 
     public static void registerConfiguredFeatures() {
         System.out.println("Registering ModConfiguredFeatures for " + TFWmod.MOD_ID);

@@ -6,7 +6,7 @@
     "settings": "minecraft:overworld",
     "biome_source": {
       "type": "minecraft:fixed",
-      "biome": "minecraft:plains"
+      "biome": "tfw:frozen_plains"
     }
   },
   "type": "tfw:frozen_type"

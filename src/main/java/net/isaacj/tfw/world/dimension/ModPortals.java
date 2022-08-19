@@ -12,7 +12,7 @@ public class ModPortals {
         CustomPortalBuilder.beginPortal()
                 .frameBlock(ModBlocks.REDSTONE_INFUSED_OBSIDIAN)
                 .destDimID(ModDimension.FROZEN_KEY.getValue())
-                .tintColor(45,65,101)
+                .tintColor(122,1,31)
                 .registerPortal();
 
     }
