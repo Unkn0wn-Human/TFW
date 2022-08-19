@@ -4,13 +4,11 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.isaacj.tfw.TFWmod;
 import net.isaacj.tfw.block.custom.*;
+import net.isaacj.tfw.block.custom.crop.ModBlueMumbadeBlock;
 import net.isaacj.tfw.item.ModItemGroups;
-import net.isaacj.tfw.item.ModItems;
-import net.isaacj.tfw.world.feature.terrain.SnowLayersFeature;
 import net.isaacj.tfw.world.feature.tree.BlueSyphSaplingGenerator;
 import net.isaacj.tfw.world.feature.tree.SyphSaplingGenerator;
 import net.minecraft.block.*;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -115,6 +113,16 @@ public class ModBlocks {
             new LanternBlock(FabricBlockSettings.of(Material.METAL)
     .sounds(BlockSoundGroup.LANTERN).strength(3.5f,3.5f).nonOpaque()), ModItemGroups.TFW);
 
+//mumbade crop
+    public static final Block BLUE_MUMBADE_CROP = registerBlockWithoutBlockItem("blue_mumbade_crop",
+            new ModBlueMumbadeBlock(FabricBlockSettings.copy(Blocks.BEETROOTS)));
+
+    public static final Block PURPLE_MUMBADE_CROP = registerBlockWithoutBlockItem("purple_mumbade_crop",
+            new ModBlueMumbadeBlock(FabricBlockSettings.copy(Blocks.BEETROOTS)));
+
+    public static final Block GOLD_MUMBADE_CROP = registerBlockWithoutBlockItem("gold_mumbade_crop",
+            new ModBlueMumbadeBlock(FabricBlockSettings.copy(Blocks.BEETROOTS)));
+
 
 
 
@@ -125,6 +133,7 @@ public class ModBlocks {
     private static Block registerBlockWithoutBlockItem(String name, Block block){
         return Registry.register(Registry.BLOCK, new Identifier(TFWmod.MOD_ID, name), block);
     }
+
 
     private static Block registerBlock(String name, Block block, ItemGroup group){
         registerBlockItem(name, block, group);

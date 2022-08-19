@@ -1,6 +1,12 @@
 {
 
+
   "item.tfw.syph_nut": "Syph Nut",
+
+  "item.tfw.blue_mumbade_seeds": "Blue Mumbade Seeds",
+  "item.tfw.purple_mumbade_seeds": "Purple Mumbade Seeds",
+  "item.tfw.gold_mumbade_seeds": "Gold Mumbade Seeds",
+
 
 
   "block.tfw.redstone_infused_obsidian": "Redstone Infused Obsidian",
@@ -29,6 +35,12 @@
   "block.tfw.blue_mumbade": "Blue Mumbade",
   "block.tfw.purple_mumbade": "Purple Mumbade",
   "block.tfw.gold_mumbade": "Gold Mumbade",
+
+  "block.tfw.blue_mumbade_crop": "Blue Mumbade Crop",
+  "block.tfw.purple_mumbade_crop": "Purple Mumbade Crop",
+  "block.tfw.gold_mumbade_crop": "Gold Mumbade Crop",
+
+
 
   "block.tfw.potted_gold_mumbade": "Potted Gold Mumbade",
   "block.tfw.potted_blue_mumbade": "Potted Blue Mumbade",

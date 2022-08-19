@@ -2,6 +2,8 @@ package net.isaacj.tfw.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.isaacj.tfw.TFWmod;
+import net.isaacj.tfw.block.ModBlocks;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
@@ -12,6 +14,24 @@ public class ModItems {
 
     public static final Item SYPH_NUT = registerItem("syph_nut",
             new Item(new FabricItemSettings().food(ModFoodComponent.SYPH_NUT).group(ModItemGroups.TFW)));
+
+
+    public static final Item BLUE_MUMBADE_SEEDS = registerItem("blue_mumbade_seeds",
+            new AliasedBlockItem(ModBlocks.BLUE_MUMBADE_CROP,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item PURPLE_MUMBADE_SEEDS = registerItem("purple_mumbade_seeds",
+            new AliasedBlockItem(ModBlocks.PURPLE_MUMBADE_CROP,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item GOLD_MUMBADE_SEEDS = registerItem("gold_mumbade_seeds",
+            new AliasedBlockItem(ModBlocks.GOLD_MUMBADE_CROP,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+
+
+
+
 
 
 
