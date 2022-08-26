@@ -12,6 +12,13 @@
   "block.tfw.redstone_infused_obsidian": "Redstone Infused Obsidian",
   "block.tfw.compact_snow": "Compact Snow",
 
+  "block.tfw.tadacia_log": "Tadacia Log",
+
+  "block.tfw.burnt_tadacia_log": "Burnt Tadacia Log",
+  "block.tfw.burnt_tadacia_planks": "Burnt Tadacia planks",
+  "block.tfw.burnt_tadacia_sapling": "Burnt Tadacia Sapling",
+  "block.tfw.burnt_tadacia_leaves":"Burnt Tadacia Leaves",
+
   "block.tfw.syph_log": "Syph Log",
   "block.tfw.syph_planks": "Syph Planks",
   "block.tfw.syph_wood": "Syph Wood",

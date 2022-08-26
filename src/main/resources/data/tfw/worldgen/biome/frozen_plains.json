@@ -32,6 +32,7 @@
   "features": [
     [],
     [
+
       "minecraft:lake_lava_underground"
 
     ],
@@ -41,7 +42,8 @@
     [
 
     ],
-    [],
+    [
+    ],
     [],
     [
       "minecraft:ore_dirt",
@@ -79,11 +81,11 @@
       "minecraft:spring_lava"
     ],
     [
+      "tfw:snow_layers_feature"
 
 
     ],
     [
-      "minecraft:freeze_top_layer"
 
     ]
   ]

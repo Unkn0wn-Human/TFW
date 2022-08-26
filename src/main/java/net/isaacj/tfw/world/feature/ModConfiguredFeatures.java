@@ -4,7 +4,7 @@ import net.isaacj.tfw.TFWmod;
 import net.isaacj.tfw.block.ModBlocks;
 import net.isaacj.tfw.block.custom.ModForkingTrunkPlacer;
 import net.isaacj.tfw.world.feature.config.SnowLayersConfig;
-import net.isaacj.tfw.world.feature.terrain.SnowLayersFeature;
+import net.isaacj.tfw.world.feature.features.SnowLayersFeature;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.Identifier;
@@ -29,8 +29,6 @@ import javax.imageio.spi.RegisterableService;
 public class ModConfiguredFeatures {
 
 
-
-
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> SYPH_TREE =
             ConfiguredFeatures.register("syph_tree", Feature.TREE, new TreeFeatureConfig.Builder(
                     BlockStateProvider.of(ModBlocks.SYPH_LOG),
@@ -47,6 +45,22 @@ public class ModConfiguredFeatures {
                     BlockStateProvider.of(Blocks.AIR),
                     new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 2),
                     new TwoLayersFeatureSize(1, 0, 2)).build());
+
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BURNT_TADACIA_TREE =
+            ConfiguredFeatures.register("burnt_tadacia_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.BURNT_TADACIA_LOG),
+                    new StraightTrunkPlacer(3, 6, 2),
+                    BlockStateProvider.of(Blocks.AIR),
+                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 2),
+                    new TwoLayersFeatureSize(1, 0, 2)).build());
+
+
+    public static final RegistryEntry<ConfiguredFeature<DefaultFeatureConfig, ?>> SNOW_LAYERS_FEATURE =
+            ConfiguredFeatures.register("snow_layers_feature", new SnowLayersFeature(DefaultFeatureConfig.CODEC));
+
+
+
+
 
 
 

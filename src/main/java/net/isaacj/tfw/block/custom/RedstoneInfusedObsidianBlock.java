@@ -12,6 +12,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Random;
@@ -28,7 +29,7 @@ public class RedstoneInfusedObsidianBlock extends Block {
     }
     public void neighborUpdate(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
         if (!world.isClient) {
-            boolean bl = (Boolean)state.get(ON);
+            boolean bl = state.get(ON);
             if (bl != world.isReceivingRedstonePower(pos)) {
                 if (bl) {
                     world.createAndScheduleBlockTick(pos, this, 4);
@@ -40,6 +41,7 @@ public class RedstoneInfusedObsidianBlock extends Block {
         }
     }
 
+
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         if ((Boolean)state.get(ON) && !world.isReceivingRedstonePower(pos)) {
             world.setBlockState(pos, (BlockState)state.cycle(ON), 2);
@@ -49,8 +51,10 @@ public class RedstoneInfusedObsidianBlock extends Block {
 
     @Nullable
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return (BlockState)this.getDefaultState().with(ON, ctx.getWorld().isReceivingRedstonePower(ctx.getBlockPos()));
+        return this.getDefaultState().with(ON, ctx.getWorld().isReceivingRedstonePower(ctx.getBlockPos()));
     }
+
+
 
 
     @Override

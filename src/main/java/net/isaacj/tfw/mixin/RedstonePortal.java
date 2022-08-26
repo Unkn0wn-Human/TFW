@@ -1,6 +1,8 @@
 package net.isaacj.tfw.mixin;
 
 
+import net.isaacj.tfw.block.ModBlocks;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.NetherPortalBlock;
@@ -13,6 +15,9 @@ import org.spongepowered.asm.mixin.Mixin;
 @Mixin(NetherPortalBlock.class)
 public abstract class RedstonePortal {
 
+    public RedstonePortal(AbstractBlock.Settings settings) {
+    }
+
     public boolean emitsRedstonePower(BlockState state) {
         return true;
     }
@@ -20,9 +25,4 @@ public abstract class RedstonePortal {
     public int getWeakRedstonePower(BlockState state, BlockView world, BlockPos pos, Direction direction) {
         return 15;
     }
-
-    public boolean neighborUpdate(BlockState state, World world, BlockPos pos, Block block, BlockPos fromPos, boolean notify) {
-       return true;
-    }
-
 }

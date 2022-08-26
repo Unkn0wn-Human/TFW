@@ -7,6 +7,7 @@ import net.isaacj.tfw.block.custom.*;
 import net.isaacj.tfw.block.custom.crop.ModBlueMumbadeBlock;
 import net.isaacj.tfw.item.ModItemGroups;
 import net.isaacj.tfw.world.feature.tree.BlueSyphSaplingGenerator;
+import net.isaacj.tfw.world.feature.tree.BurntTadaciaSaplingGenerator;
 import net.isaacj.tfw.world.feature.tree.SyphSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
@@ -27,6 +28,22 @@ public class ModBlocks {
     public static final Block COMPACT_SNOW = registerBlock("compact_snow",
             new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).sounds(BlockSoundGroup.SNOW).strength(0.4f, 2f ).requiresTool()),
             ModItemGroups.TFW);
+
+    public static final Block TADACIA_LOG = registerBlock("tadacia_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroups.TFW);
+
+    public static final Block BURNT_TADACIA_LOG = registerBlock("burnt_tadacia_log",
+            new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroups.TFW);
+
+    public static final Block BURNT_TADACIA_PLANKS = registerBlock("burnt_tadacia_planks",
+            new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)),ModItemGroups.TFW);
+
+    public static final Block BURNT_TADACIA_SAPLING = registerBlock("burnt_tadacia_sapling",
+            new ModSaplingBlock(new BurntTadaciaSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroups.TFW);
+
+    public static final Block BURNT_TADACIA_LEAVES = registerBlock("burnt_tadacia_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroups.TFW);
 
     public static final Block SYPH_LOG = registerBlock("syph_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroups.TFW);

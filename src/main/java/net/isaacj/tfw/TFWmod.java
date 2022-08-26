@@ -7,7 +7,6 @@ import net.isaacj.tfw.util.ModRegistries;
 import net.isaacj.tfw.world.dimension.ModDimension;
 import net.isaacj.tfw.world.dimension.ModPortals;
 import net.isaacj.tfw.world.feature.ModConfiguredFeatures;
-import net.fabricmc.api.ModInitializer;
 
 import net.isaacj.tfw.world.gen.ModWorldGen;
 import net.isaacj.tfw.world.structures.ModStructures;
