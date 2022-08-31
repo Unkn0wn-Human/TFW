@@ -1,4 +1,4 @@
-package net.isaacj.tfw.block.custom;
+package net.isaacj.tfw.world.feature.tree.placer;
 
 import com.google.common.collect.Lists;
 import com.mojang.serialization.Codec;

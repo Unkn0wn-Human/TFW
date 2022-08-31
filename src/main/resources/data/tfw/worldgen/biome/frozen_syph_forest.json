@@ -32,7 +32,7 @@
   "features": [
     [],
     [
-      "tfw:trees_syph_plains",
+      "tfw:trees_syph",
       "tfw:snow_layers_feature",
       "tfw:snow_layers_fix_feature",
       "minecraft:lake_lava_underground"

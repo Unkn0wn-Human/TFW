@@ -8,8 +8,10 @@ import net.isaacj.tfw.world.dimension.ModDimension;
 import net.isaacj.tfw.world.dimension.ModPortals;
 import net.isaacj.tfw.world.feature.ModConfiguredFeatures;
 
+import net.isaacj.tfw.world.feature.features.ModFeatures;
 import net.isaacj.tfw.world.gen.ModWorldGen;
 import net.isaacj.tfw.world.structures.ModStructures;
+import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,10 +23,16 @@ public class TFWmod implements ModInitializer{
 	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
 
+	public static Identifier id(String path) {
+		return new Identifier(MOD_ID, path);
+	}
+
+
 
     @Override
 	public void onInitialize() {
 		ModConfiguredFeatures.registerConfiguredFeatures();
+		ModFeatures.registerFeatures();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();

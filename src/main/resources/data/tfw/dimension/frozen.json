@@ -2,13 +2,120 @@
   "type": "minecraft:overworld",
   "generator": {
     "type": "minecraft:noise",
-    "seed": 1441347363,
-    "settings": "minecraft:overworld",
+    "seed": -287195241,
+    "settings": "tfw:frozen",
     "biome_source": {
-      "type": "minecraft:fixed",
-      "biome": "tfw:frozen_plains"
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "tfw:frozen_plains",
+          "parameters": {
+            "temperature": [
+              -0.1,
+              0.4
+            ],
+            "humidity": [
+              -0.3,
+              0.3
+            ],
+            "continentalness": [
+              0.03,
+              1
+            ],
+            "erosion": [
+              -0.2225,
+              0.05
+            ],
+            "weirdness": [
+              -1,
+              -0.833
+            ],
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "tfw:frozen_syph_forest",
+          "parameters": {
+            "temperature": [
+              -0.45,
+              0
+            ],
+            "humidity": [
+              -0.2,
+              0.2
+            ],
+            "continentalness": [
+              0.3,
+              1
+            ],
+            "erosion": [
+              -0.375,
+              0.2225
+            ],
+            "weirdness": [
+              -1,
+              0
+            ],
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "tfw:frozen_burnt_tadacia_forest",
+          "parameters": {
+            "temperature": [
+              0,
+              0.5
+            ],
+            "humidity": [
+              0.3,
+              1
+            ],
+            "continentalness": [
+              -0.2,
+              0.3
+            ],
+            "erosion": [
+              -0.7799,
+              -0.375
+            ],
+            "weirdness": [
+              -1,
+              -0.7
+            ],
+            "depth": 0,
+            "offset": 0
+          }
+        },
+        {
+          "biome": "tfw:frozen_cold_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              -0.5
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1,
+              -0.5
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": 0.0,
+            "offset": 0
+          }
+        }
+      ]
     }
-  },
-  "type": "tfw:frozen_type"
+  }
 }
-

@@ -16,7 +16,5 @@ import net.minecraft.world.gen.placementmodifier.*;
 
 public class ModPlacedFeatures {
 
-    public static final RegistryEntry<PlacedFeature> SNOW_LAYERS_PLACED = PlacedFeatures.register("snow_layers_placed",
-            ModConfiguredFeatures.SNOW_LAYERS_FEATURE);
 
 }

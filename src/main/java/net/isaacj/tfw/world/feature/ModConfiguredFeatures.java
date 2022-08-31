@@ -2,29 +2,14 @@ package net.isaacj.tfw.world.feature;
 
 import net.isaacj.tfw.TFWmod;
 import net.isaacj.tfw.block.ModBlocks;
-import net.isaacj.tfw.block.custom.ModForkingTrunkPlacer;
-import net.isaacj.tfw.world.feature.config.SnowLayersConfig;
-import net.isaacj.tfw.world.feature.features.SnowLayersFeature;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
-import net.minecraft.util.registry.BuiltinRegistries;
-import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.RegistryEntry;
-import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
-import net.minecraft.world.gen.foliage.PineFoliagePlacer;
-import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.stateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
-import org.lwjgl.system.CallbackI;
-
-import javax.imageio.spi.RegisterableService;
 
 public class ModConfiguredFeatures {
 
@@ -53,21 +38,6 @@ public class ModConfiguredFeatures {
                     BlockStateProvider.of(Blocks.AIR),
                     new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 2),
                     new TwoLayersFeatureSize(1, 0, 2)).build());
-
-
-    public static final RegistryEntry<ConfiguredFeature<DefaultFeatureConfig, ?>> SNOW_LAYERS_FEATURE =
-            ConfiguredFeatures.register("snow_layers_feature", new SnowLayersFeature(DefaultFeatureConfig.CODEC));
-
-
-
-
-
-
-
-
-
-
-
 
 
 

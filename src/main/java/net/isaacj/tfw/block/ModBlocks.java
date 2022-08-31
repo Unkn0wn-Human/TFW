@@ -32,10 +32,11 @@ public class ModBlocks {
     public static final Block TADACIA_LOG = registerBlock("tadacia_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroups.TFW);
 
+
     public static final Block BURNT_TADACIA_LOG = registerBlock("burnt_tadacia_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroups.TFW);
 
-    public static final Block BURNT_TADACIA_PLANKS = registerBlock("burnt_tadacia_planks",
+    public static final Block TADACIA_PLANKS = registerBlock("tadacia_planks",
             new Block(FabricBlockSettings.copy(Blocks.OAK_PLANKS)),ModItemGroups.TFW);
 
     public static final Block BURNT_TADACIA_SAPLING = registerBlock("burnt_tadacia_sapling",
@@ -44,6 +45,24 @@ public class ModBlocks {
 
     public static final Block BURNT_TADACIA_LEAVES = registerBlock("burnt_tadacia_leaves",
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroups.TFW);
+
+    public static final Block TADACIA_STAIRS = registerBlock("tadacia_stairs",
+            new ModStairsBlock(ModBlocks.TADACIA_PLANKS.getDefaultState(),FabricBlockSettings.of(Material.WOOD).
+                    sounds(BlockSoundGroup.WOOD).strength(2f, 15f )),
+            ModItemGroups.TFW);
+
+    public static final Block TADACIA_SLAB = registerBlock("tadacia_slab",
+            new SlabBlock(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).
+                    strength(2f, 15f )),
+            ModItemGroups.TFW);
+
+    public static final Block TADACIA_PRESSURE_PLATE = registerBlock("tadacia_pressure_plate",
+            new ModPressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING ,FabricBlockSettings.of(Material.WOOD)
+                    .sounds(BlockSoundGroup.WOOD).
+                            strength(0.5f, 2.5f )),
+            ModItemGroups.TFW);
+
+
 
     public static final Block SYPH_LOG = registerBlock("syph_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroups.TFW);
