@@ -18,15 +18,17 @@
 
   "environment": "*",
   "entrypoints": {
+
     "main": [
       "net.isaacj.tfw.TFWmod"
     ],
+    "preLaunch": [
+      "net.isaacj.tfw.TFWpreLaunch"
+    ],
     "client": [
       "net.isaacj.tfw.TFWClient"
-    ],
-    "terrablender": [
-      "net.isaacj.tfw.TFWmod"
     ]
+
   },
   "mixins": [
     "tfw.mixins.json"

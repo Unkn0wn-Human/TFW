@@ -2,6 +2,7 @@ package net.isaacj.tfw;
 
 import net.fabricmc.api.ModInitializer;
 import net.isaacj.tfw.block.ModBlocks;
+import net.isaacj.tfw.effect.ModEffects;
 import net.isaacj.tfw.item.ModItems;
 import net.isaacj.tfw.util.ModRegistries;
 import net.isaacj.tfw.world.dimension.ModDimension;
@@ -46,6 +47,9 @@ public class TFWmod implements ModInitializer{
 		ModWorldGen.generateModWorldGen();
 
 		ModStructures.registerStructureFeatures();
+
+		ModEffects.registerEffects();
 	}
+
 
 }
