@@ -25,9 +25,21 @@ public class ModBlocks {
             .luminance((state) -> state.get(RedstoneInfusedObsidianBlock.ON) ? 20 : 0 )),
                     ModItemGroups.TFW);
 
+
+
     public static final Block COMPACT_SNOW = registerBlock("compact_snow",
             new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).sounds(BlockSoundGroup.SNOW).strength(0.4f, 2f ).requiresTool()),
             ModItemGroups.TFW);
+
+    public static final Block COMPACT_SNOW_SYPH = registerBlock("compact_snow_syph",
+            new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).sounds(BlockSoundGroup.SNOW).strength(0.4f, 2f )),
+            ModItemGroups.TFW);
+
+    public static final Block COMPACT_SNOW_BURNT_TADACIA = registerBlock("compact_snow_burnt_tadacia",
+            new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).sounds(BlockSoundGroup.SNOW).strength(0.4f, 2f )),
+            ModItemGroups.TFW);
+
+
 
     public static final Block TADACIA_LOG = registerBlock("tadacia_log",
             new PillarBlock(FabricBlockSettings.copy(Blocks.OAK_LOG)), ModItemGroups.TFW);
