@@ -33,8 +33,7 @@ public class SnowLayersFeature extends Feature<DefaultFeatureConfig> {
         BlockPos blockPos = context.getOrigin();
         BlockPos.Mutable mutable = new BlockPos.Mutable();
         BlockPos.Mutable mutable2 = new BlockPos.Mutable();
-        BlockPos.Mutable mutable3 = new BlockPos.Mutable();
-        BlockPos.Mutable mutable4 = new BlockPos.Mutable();
+
 
 
 
@@ -45,7 +44,6 @@ public class SnowLayersFeature extends Feature<DefaultFeatureConfig> {
                     int m = structureWorldAccess.getTopY(Heightmap.Type.MOTION_BLOCKING, k, l);
                     mutable.set(k, m, l);
                     mutable2.set(k, m, l).move(Direction.UP, 1);
-                    mutable3.set(k, m, l).move(Direction.UP, 2);
 
 
                     if (structureWorldAccess.getBlockState(mutable.down()).isOf(Blocks.DIRT) ||
@@ -55,31 +53,12 @@ public class SnowLayersFeature extends Feature<DefaultFeatureConfig> {
                     {
                         structureWorldAccess.setBlockState(mutable, ModBlocks.COMPACT_SNOW.getDefaultState(), 2);
                         structureWorldAccess.setBlockState(mutable2, ModBlocks.COMPACT_SNOW.getDefaultState(), 2);
-                        structureWorldAccess.setBlockState(mutable3, Blocks.SNOW_BLOCK.getDefaultState(), 2);
                     }
                 }
             }
 
 
 
-        for (int y = 117; y < 300; y++) {
-            for (int x = 0; x < 16; x++) {
-                for (int z = 0; z < 16; z++) {
-                    int k = blockPos.getX() + x;
-                    int l = blockPos.getZ() + z;
-                    int m = blockPos.getY() + y;
-                    mutable4.set(k, m, l);
-                    FluidState fluidState = structureWorldAccess.getFluidState(mutable4);
-                    BlockState blockState = structureWorldAccess.getBlockState(mutable4);
-
-                    if (fluidState.getFluid() == Fluids.WATER && blockState.getBlock() instanceof FluidBlock) {
-
-                        structureWorldAccess.setBlockState(mutable4, Blocks.ICE.getDefaultState(), 2);
-                    }
-
-                }
-            }
-        }
 
 
         return true;

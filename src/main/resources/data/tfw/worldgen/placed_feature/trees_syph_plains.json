@@ -45,7 +45,7 @@
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "OCEAN_FLOOR"
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES"
     },
     {
       "type": "minecraft:biome"
@@ -62,5 +62,7 @@
         }
       }
     }
+
+
   ]
 }

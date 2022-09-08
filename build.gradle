@@ -30,7 +30,7 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
+	// Fabric API.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	modImplementation 'net.kyrptonaught:customportalapi:0.0.1-beta50-1.18'
@@ -40,6 +40,9 @@ dependencies {
 	implementation "com.github.LlamaLad7:MixinExtras:0.0.12"
 	include 'com.github.LlamaLad7:MixinExtras:0.0.12'
 	annotationProcessor "com.github.LlamaLad7:MixinExtras:0.0.12"
+
+	//FabricASM
+	//implementation 'com.github.Chocohead:Fabric-ASM:v2.3'
 
 
 
