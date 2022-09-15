@@ -4,14 +4,30 @@
     {
       "rolls": {
         "type": "minecraft:uniform",
-        "min": 1,
-        "max": 4
+        "min": 0,
+        "max": 3
       },
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 25,
-          "name": "minecraft:book",
+          "weight": 100,
+          "name": "minecraft:raw_copper",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 15
+              },
+              "add": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "name": "minecraft:raw_gold",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -26,43 +42,15 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:book",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30,
-              "treasure": true
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 15,
-          "name": "minecraft:paper",
+          "weight": 70,
+          "name": "minecraft:raw_iron",
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
                 "min": 1,
-                "max": 12
-              },
-              "add": false
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "name": "minecraft:feather",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
+                "max": 15
               },
               "add": false
             }
@@ -70,12 +58,12 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 100
+          "weight": 150
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:cobweb",
+          "weight": 3,
+          "name": "minecraft:diamond_ore",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -87,6 +75,10 @@
               "add": false
             }
           ]
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 150
         }
       ]
     }
