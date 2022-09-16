@@ -28,6 +28,11 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.GOLD_MUMBADE_CROP,
                     new FabricItemSettings().group(ModItemGroups.TFW)));
 
+    public static final Item RAW_MICENTEAN = registerItem("raw_micentean",
+            new Item(new FabricItemSettings().group(ModItemGroups.TFW)));
+    public static final Item MICENTEAN_INGOT = registerItem("micentean_ingot",
+            new Item(new FabricItemSettings().group(ModItemGroups.TFW)));
+
 
 
 

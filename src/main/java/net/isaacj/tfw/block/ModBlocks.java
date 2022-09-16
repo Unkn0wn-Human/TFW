@@ -14,6 +14,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -73,6 +74,16 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.WOOD).
                             strength(0.5f, 2.5f )),
             ModItemGroups.TFW);
+
+
+    public static final Block MICENTEAN_ORE = registerBlock("micentean_ore",
+            new Block(FabricBlockSettings.copy(Blocks.IRON_ORE).requiresTool()), ModItemGroups.TFW);
+
+    public static final Block DEEPSLATE_MICENTEAN_ORE = registerBlock("deepslate_micentean_ore",
+            new Block(FabricBlockSettings.copy(Blocks.DEEPSLATE_IRON_ORE)), ModItemGroups.TFW);
+
+    public static final Block MICENTEAN_BLOCK = registerBlock("micentean_block",
+            new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK)), ModItemGroups.TFW);
 
 
 

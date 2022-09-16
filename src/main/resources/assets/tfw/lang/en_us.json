@@ -7,6 +7,10 @@
   "item.tfw.purple_mumbade_seeds": "Purple Mumbade Seeds",
   "item.tfw.gold_mumbade_seeds": "Gold Mumbade Seeds",
 
+  "item.tfw.micentean_ingot": "Micentean Ingot",
+  "item.tfw.raw_micentean": "Raw Micentean",
+
+
 
 
   "block.tfw.redstone_infused_obsidian": "Redstone Infused Obsidian",
@@ -44,6 +48,10 @@
   "block.tfw.syph_fence": "Syph Fence",
   "block.tfw.syph_fence_gate": "Syph Gate",
   "block.tfw.syph_door": "Syph Door",
+
+  "block.tfw.micentean_ore": "Micentean Ore",
+  "block.tfw.deepslate_micentean_ore": "Deepslate Micentean Ore",
+  "block.tfw.mincentean_block": "Micentean Block",
 
   "block.tfw.blue_mumbade": "Blue Mumbade",
   "block.tfw.purple_mumbade": "Purple Mumbade",

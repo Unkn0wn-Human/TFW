@@ -10,7 +10,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 100,
+          "weight": 75,
           "name": "minecraft:raw_copper",
           "functions": [
             {
@@ -26,7 +26,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 50,
+          "weight": 75,
           "name": "minecraft:raw_gold",
           "functions": [
             {
@@ -62,7 +62,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 10,
           "name": "minecraft:diamond_ore",
           "functions": [
             {
@@ -78,7 +78,7 @@
         },
         {
           "type": "minecraft:empty",
-          "weight": 150
+          "weight": 100
         }
       ]
     }
