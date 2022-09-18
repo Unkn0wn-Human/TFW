@@ -10,6 +10,14 @@
   "item.tfw.micentean_ingot": "Micentean Ingot",
   "item.tfw.raw_micentean": "Raw Micentean",
 
+  "item.tfw.micentean_pickaxe": "Micentean Pickaxe",
+  "item.tfw.micentean_hoe": "Micentean Hoe",
+  "item.tfw.micentean_axe": "Micentean axe",
+  "item.tfw.micentean_sword": "Micentean sword",
+  "item.tfw.micentean_shovel": "Micentean shovel",
+
+
+
 
 
 
@@ -52,6 +60,7 @@
   "block.tfw.micentean_ore": "Micentean Ore",
   "block.tfw.deepslate_micentean_ore": "Deepslate Micentean Ore",
   "block.tfw.mincentean_block": "Micentean Block",
+
 
   "block.tfw.blue_mumbade": "Blue Mumbade",
   "block.tfw.purple_mumbade": "Purple Mumbade",

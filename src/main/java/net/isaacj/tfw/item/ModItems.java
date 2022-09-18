@@ -3,9 +3,10 @@ package net.isaacj.tfw.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.isaacj.tfw.TFWmod;
 import net.isaacj.tfw.block.ModBlocks;
-import net.minecraft.item.AliasedBlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.isaacj.tfw.item.custom.ModAxeItem;
+import net.isaacj.tfw.item.custom.ModHoeItem;
+import net.isaacj.tfw.item.custom.ModPickaxeItem;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -30,9 +31,31 @@ public class ModItems {
 
     public static final Item RAW_MICENTEAN = registerItem("raw_micentean",
             new Item(new FabricItemSettings().group(ModItemGroups.TFW)));
+
     public static final Item MICENTEAN_INGOT = registerItem("micentean_ingot",
             new Item(new FabricItemSettings().group(ModItemGroups.TFW)));
 
+
+
+    public static final Item MICENTEAN_PICKAXE = registerItem("micentean_pickaxe",
+            new ModPickaxeItem(ModToolMaterial.MICENTEAN, 2, -2.8f,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item MICENTEAN_AXE = registerItem("micentean_axe",
+            new ModAxeItem(ModToolMaterial.MICENTEAN, 6, -3.0f,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item MICENTEAN_HOE = registerItem("micentean_hoe",
+            new ModHoeItem(ModToolMaterial.MICENTEAN, -2, -1.0f,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item MICENTEAN_SHOVEL = registerItem("micentean_shovel",
+            new ShovelItem(ModToolMaterial.MICENTEAN, 2, -3.0f,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item MICENTEAN_SWORD = registerItem("micentean_sword",
+            new SwordItem(ModToolMaterial.MICENTEAN, 3, -2.4f,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
 
 
 
