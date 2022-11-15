@@ -41,7 +41,7 @@ public class SnowLayersFeature extends Feature<DefaultFeatureConfig> {
                 for (int z = 0; z < 16; z++) {
                     int k = blockPos.getX() + x;
                     int l = blockPos.getZ() + z;
-                    int m = structureWorldAccess.getTopY(Heightmap.Type.MOTION_BLOCKING, k, l);
+                    int m = structureWorldAccess.getTopY(Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, k, l);
                     mutable.set(k, m, l);
                     mutable2.set(k, m, l).move(Direction.UP, 1);
 
@@ -56,11 +56,6 @@ public class SnowLayersFeature extends Feature<DefaultFeatureConfig> {
                     }
                 }
             }
-
-
-
-
-
         return true;
     }
 }

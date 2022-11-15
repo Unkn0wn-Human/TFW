@@ -32,13 +32,13 @@
   "features": [
     [],
     [
-      "tfw:trees_syph",
-      "tfw:snow_layers_feature",
-      "minecraft:lake_lava_underground",
+      "tfw:trees_syph_forest",
+      "minecraft:lake_lava_underground"
 
-      "tfw:compact_snow_syph"
+      //"tfw:compact_snow_syph"
     ],
     [
+      "tfw:snow_layers_feature",
       "minecraft:amethyst_geode"
 
     ],
@@ -85,6 +85,7 @@
       "minecraft:spring_water",
       "minecraft:spring_lava",
       "tfw:snow_layers_fix_feature"
+
     ],
     [
 

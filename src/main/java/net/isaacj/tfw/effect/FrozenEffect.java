@@ -37,7 +37,7 @@ public class FrozenEffect extends StatusEffect {
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
         int i;
         if (this == ModEffects.FROZEN) {
-            i = 50 >> amplifier;
+            i = 200 >> amplifier;
             if (i > 0) {
                 return duration % i == 0;
             } else {

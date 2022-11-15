@@ -22,11 +22,10 @@ public class TFWClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.GOLD_MUMBADE_CROP, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PURPLE_MUMBADE_CROP, RenderLayer.getCutout());
 
-
-
-
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.SYPH_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BLUE_SYPH_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BURNT_TADACIA_SAPLING, RenderLayer.getCutout());
+
 
 
     }

@@ -5,7 +5,11 @@
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "HeartTypeMixin",
+    "InGameHudMixin",
+    "ModFoliagePlacerMixin$FoliagePlacerTypeInvoker",
     "ModHeightmap",
+    "ModTrunkPlacerMixin$TrunkPlacerTypeInvoker",
+    "PlayerEntityMixin",
     "StructureFeatureAccessor"
   ],
   "client": [
