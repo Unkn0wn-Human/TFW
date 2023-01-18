@@ -6,13 +6,12 @@ import net.isaacj.tfw.block.ModBlocks;
 import net.isaacj.tfw.item.custom.ModAxeItem;
 import net.isaacj.tfw.item.custom.ModHoeItem;
 import net.isaacj.tfw.item.custom.ModPickaxeItem;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
-
-
     public static final Item SYPH_NUT = registerItem("syph_nut",
             new Item(new FabricItemSettings().food(ModFoodComponent.SYPH_NUT).group(ModItemGroups.TFW)));
 
@@ -55,6 +54,40 @@ public class ModItems {
 
     public static final Item MICENTEAN_SWORD = registerItem("micentean_sword",
             new SwordItem(ModToolMaterial.MICENTEAN, 3, -2.4f,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+
+    public static final Item MICENTEAN_HELMET = registerItem("micentean_helmet",
+            new ArmorItem(ModArmorMaterial.MICENTEAN, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item MICENTEAN_CHESTPLATE = registerItem("micentean_chestplate",
+            new ArmorItem(ModArmorMaterial.MICENTEAN, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item MICENTEAN_LEGGINGS = registerItem("micentean_leggings",
+            new ArmorItem(ModArmorMaterial.MICENTEAN, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item MICENTEAN_BOOTS = registerItem("micentean_boots",
+            new ArmorItem(ModArmorMaterial.MICENTEAN, EquipmentSlot.FEET,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+
+    public static final Item HEAVY_LEATHER_HELMET = registerItem("heavy_leather_helmet",
+            new ArmorItem(ModArmorMaterial.HEAVY_LEATHER, EquipmentSlot.HEAD,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item HEAVY_LEATHER_CHESTPLATE = registerItem("heavy_leather_chestplate",
+            new ArmorItem(ModArmorMaterial.HEAVY_LEATHER, EquipmentSlot.CHEST,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item HEAVY_LEATHER_LEGGINGS = registerItem("heavy_leather_leggings",
+            new ArmorItem(ModArmorMaterial.HEAVY_LEATHER, EquipmentSlot.LEGS,
+                    new FabricItemSettings().group(ModItemGroups.TFW)));
+
+    public static final Item HEAVY_LEATHER_BOOTS = registerItem("heavy_leather_boots",
+            new ArmorItem(ModArmorMaterial.HEAVY_LEATHER, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroups.TFW)));
 
 

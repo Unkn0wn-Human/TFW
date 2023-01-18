@@ -2,7 +2,10 @@ package net.isaacj.tfw;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.isaacj.tfw.block.ModBlocks;
+import net.isaacj.tfw.screen.ModScreenHandlers;
+import net.isaacj.tfw.screen.NetheriteBlasterScreen;
 import net.minecraft.client.render.RenderLayer;
 
 public class TFWClient implements ClientModInitializer {
@@ -27,6 +30,6 @@ public class TFWClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.BURNT_TADACIA_SAPLING, RenderLayer.getCutout());
 
 
-
+        ScreenRegistry.register(ModScreenHandlers.NETHERITE_BLASTER_SCREEN_HANDLER, NetheriteBlasterScreen::new);
     }
 }

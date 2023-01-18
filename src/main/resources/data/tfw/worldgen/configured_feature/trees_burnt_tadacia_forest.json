@@ -35,13 +35,13 @@
       }
     },
     "trunk_placer": {
-      "type": "minecraft:straight_trunk_placer",
+      "type": "minecraft:mod_tadacia_trunk_placer",
       "base_height": 5,
-      "height_rand_a": 3,
-      "height_rand_b": 8
+      "height_rand_a": 0,
+      "height_rand_b": 10
     },
     "foliage_placer": {
-      "type": "minecraft:blob_foliage_placer",
+      "type": "minecraft:mod_tadacia_foliage_placer",
       "radius": 1,
       "offset": 0,
       "height": 2

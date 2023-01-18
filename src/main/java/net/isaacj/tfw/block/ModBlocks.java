@@ -14,7 +14,6 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -23,10 +22,12 @@ public class ModBlocks {
 
     public static final Block REDSTONE_INFUSED_OBSIDIAN = registerBlock("redstone_infused_obsidian",
             new RedstoneInfusedObsidianBlock(FabricBlockSettings.of(Material.STONE).strength(50f, 6000f ).requiresTool()
-            .luminance((state) -> state.get(RedstoneInfusedObsidianBlock.ON) ? 20 : 0 )),
+            .luminance((state) -> state.get(RedstoneInfusedObsidianBlock.ON) ? 10 : 0 )),
                     ModItemGroups.TFW);
 
-
+    public static final Block NETHERITE_BLASTER = registerBlock("netherite_blaster",
+            new NetheriteBlasterBlock(FabricBlockSettings.of(Material.STONE).nonOpaque()),
+            ModItemGroups.TFW);
 
     public static final Block COMPACT_SNOW = registerBlock("compact_snow",
             new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).sounds(BlockSoundGroup.SNOW).strength(0.4f, 2f ).requiresTool()),
@@ -57,6 +58,9 @@ public class ModBlocks {
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroups.TFW);
 
     public static final Block BURNT_TADACIA_LEAVES = registerBlock("burnt_tadacia_leaves",
+            new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroups.TFW);
+
+    public static final Block TADACIA_LEAVES = registerBlock("tadacia_leaves",
             new LeavesBlock(FabricBlockSettings.copy(Blocks.OAK_LEAVES)), ModItemGroups.TFW);
 
     public static final Block TADACIA_STAIRS = registerBlock("tadacia_stairs",

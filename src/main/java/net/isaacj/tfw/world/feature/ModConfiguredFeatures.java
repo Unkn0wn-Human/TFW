@@ -2,8 +2,10 @@ package net.isaacj.tfw.world.feature;
 
 import net.isaacj.tfw.TFWmod;
 import net.isaacj.tfw.block.ModBlocks;
-import net.isaacj.tfw.world.feature.tree.placer.ModBranchingTrunkPlacer;
-import net.isaacj.tfw.world.feature.tree.placer.ModSyphFoliagePlacer;
+import net.isaacj.tfw.world.feature.tree.placer.foliage.ModTadaciaFoliagePlacer;
+import net.isaacj.tfw.world.feature.tree.placer.trunk.ModBranchingTrunkPlacer;
+import net.isaacj.tfw.world.feature.tree.placer.foliage.ModSyphFoliagePlacer;
+import net.isaacj.tfw.world.feature.tree.placer.trunk.ModTadaciaTrunkPlacer;
 import net.minecraft.block.Blocks;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.util.registry.RegistryEntry;
@@ -36,10 +38,19 @@ public class ModConfiguredFeatures {
     public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> BURNT_TADACIA_TREE =
             ConfiguredFeatures.register("burnt_tadacia_tree", Feature.TREE, new TreeFeatureConfig.Builder(
                     BlockStateProvider.of(ModBlocks.BURNT_TADACIA_LOG),
-                    new StraightTrunkPlacer(15, 10, 20),
-                    BlockStateProvider.of(Blocks.AIR),
-                    new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 2),
+                    new ModTadaciaTrunkPlacer(5, 0, 10),
+                    BlockStateProvider.of(ModBlocks.BURNT_TADACIA_LEAVES),
+                    new ModTadaciaFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), ConstantIntProvider.create(2)),
                     new TwoLayersFeatureSize(1, 0, 2)).build());
+
+    public static final RegistryEntry<ConfiguredFeature<TreeFeatureConfig, ?>> TADACIA_TREE =
+            ConfiguredFeatures.register("tadacia_tree", Feature.TREE, new TreeFeatureConfig.Builder(
+                    BlockStateProvider.of(ModBlocks.TADACIA_LOG),
+                    new ModTadaciaTrunkPlacer(5, 0, 10),
+                    BlockStateProvider.of(ModBlocks.BURNT_TADACIA_LEAVES),
+                    new ModTadaciaFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), ConstantIntProvider.create(2)),
+                    new TwoLayersFeatureSize(1, 0, 2)).build());
+
 
 
 

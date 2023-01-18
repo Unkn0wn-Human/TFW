@@ -3,6 +3,7 @@ package net.isaacj.tfw.mixin;
 
 import net.isaacj.tfw.effect.ModEffects;
 
+import net.isaacj.tfw.item.ModArmorMaterial;
 import net.isaacj.tfw.tag.CustomBiomeTags;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -82,6 +83,8 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         if (hasFullSuitOfArmorOn())
             if (hasLeatherArmorOn()){
                 effectLevel = effectLevel - 1;
+            } else if(hasHeavyLeatherArmorOn()){
+                effectLevel = effectLevel -3;
             }
     }
 
@@ -99,8 +102,6 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 
 
     public boolean hasLeatherArmorOn() {
-
-
         ArmorItem boots = ((ArmorItem) getInventory().getArmorStack(0).getItem());
         ArmorItem leggings = ((ArmorItem) getInventory().getArmorStack(1).getItem());
         ArmorItem breastplate = ((ArmorItem) getInventory().getArmorStack(2).getItem());
@@ -113,8 +114,22 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 
         return bootsMaterial.equals(ArmorMaterials.LEATHER) && leggingsMaterial.equals(ArmorMaterials.LEATHER) &&
                 breastplateMaterial.equals(ArmorMaterials.LEATHER) && helmetMaterial.equals(ArmorMaterials.LEATHER);
+    }
 
+    public boolean hasHeavyLeatherArmorOn() {
+        ArmorItem boots = ((ArmorItem) getInventory().getArmorStack(0).getItem());
+        ArmorItem leggings = ((ArmorItem) getInventory().getArmorStack(1).getItem());
+        ArmorItem breastplate = ((ArmorItem) getInventory().getArmorStack(2).getItem());
+        ArmorItem helmet = ((ArmorItem) getInventory().getArmorStack(3).getItem());
 
+        ArmorMaterial bootsMaterial = boots.getMaterial();
+        ArmorMaterial leggingsMaterial = leggings.getMaterial();
+        ArmorMaterial breastplateMaterial = breastplate.getMaterial();
+        ArmorMaterial helmetMaterial = helmet.getMaterial();
+
+        return bootsMaterial.equals(ModArmorMaterial.HEAVY_LEATHER) && leggingsMaterial.equals(ModArmorMaterial.HEAVY_LEATHER) &&
+                breastplateMaterial.equals(ModArmorMaterial.HEAVY_LEATHER)
+                && helmetMaterial.equals(ModArmorMaterial.HEAVY_LEATHER);
     }
 
 

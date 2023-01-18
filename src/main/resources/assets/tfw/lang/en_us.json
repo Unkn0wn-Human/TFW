@@ -16,9 +16,16 @@
   "item.tfw.micentean_sword": "Micentean sword",
   "item.tfw.micentean_shovel": "Micentean shovel",
 
+  "item.tfw.micentean_helmet": "Micentean Helmet",
+  "item.tfw.micentean_chestplate": "Micentean Chestplate",
+  "item.tfw.micentean_leggings": "Micentean Leggings",
+  "item.tfw.micentean_boots": "Micentean boots",
 
 
-
+  "item.tfw.heavy_leather_helmet": "Heavy Leather Helmet",
+  "item.tfw.heavy_leather_chestplate": "Heavy Leather Chestplate",
+  "item.tfw.heavy_leather_leggings": "Heavy Leather Leggings",
+  "item.tfw.heavy_leather_boots": "Heavy Leather boots",
 
 
   "block.tfw.redstone_infused_obsidian": "Redstone Infused Obsidian",
@@ -32,6 +39,7 @@
   "block.tfw.tadacia_planks": "Tadacia planks",
   "block.tfw.burnt_tadacia_sapling": "Burnt Tadacia Sapling",
   "block.tfw.burnt_tadacia_leaves":"Burnt Tadacia Leaves",
+  "block.tfw.tadacia_leaves":"Tadacia Leaves",
   "block.tfw.tadacia_stairs": "Tadacia Stairs",
 
   "block.tfw.tadacia_slab": "Tadacia Slab",
@@ -77,6 +85,7 @@
   "block.tfw.potted_purple_mumbade": "Potted Purple Mumbade",
 
   "block.tfw.unlit_lantern": "Lantern (Unlit)",
+  "block.tfw.netherite_blaster": "Netherite Blaster",
 
 
   "itemGroup.tfw.tfw": "TFW"
