@@ -9,6 +9,9 @@
     "ModFoliagePlacerMixin$FoliagePlacerTypeInvoker",
     "ModHeightmap",
     "ModTrunkPlacerMixin$TrunkPlacerTypeInvoker",
+    "NoGrowthMixin$BlockCropMixin",
+    "NoGrowthMixin$BlockSaplingMixin",
+    "NoGrowthMixin$LeavesBlockDimensionMixin",
     "PlayerEntityMixin",
     "StructureFeatureAccessor"
   ],

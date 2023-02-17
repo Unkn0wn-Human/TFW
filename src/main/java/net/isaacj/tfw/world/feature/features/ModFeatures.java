@@ -16,6 +16,7 @@ public class ModFeatures {
             SnowLayersFixFeature(DefaultFeatureConfig.CODEC));
 
 
+
     private static <T extends Feature<?>> T register(String name, T entry) {
         return Registry.register(Registry.FEATURE, TFWmod.id(name), entry);
     }

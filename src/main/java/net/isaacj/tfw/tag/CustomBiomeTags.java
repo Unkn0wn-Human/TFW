@@ -8,6 +8,8 @@ import net.minecraft.world.biome.Biome;
 public class CustomBiomeTags{
 
     public static final TagKey<Biome> IS_FROZEN = of("tfw:frozen_biomes");
+    public static final TagKey<Biome> FULL_SNOW_LAYERS = of("tfw:full_snow_layers");
+    public static final TagKey<Biome> ONE_SNOW_LAYER = of("tfw:one_snow_layers");
 
     private CustomBiomeTags(){
     }

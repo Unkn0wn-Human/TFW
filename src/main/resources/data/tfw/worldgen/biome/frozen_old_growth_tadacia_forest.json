@@ -32,11 +32,10 @@
   "features": [
     [],
     [
-      "tfw:trees_burnt_tadacia",
+      "tfw:trees_large_tadacia",
       "tfw:snow_layers_feature",
-      "minecraft:lake_lava_underground",
-
-      "tfw:compact_snow_burnt_tadacia"
+      "tfw:snow_layers_fix_feature",
+      "minecraft:lake_lava_underground"
 
     ],
     [
@@ -47,7 +46,8 @@
     ],
     [
     ],
-    [],
+    [
+    ],
     [
       "minecraft:ore_dirt",
       "minecraft:ore_gravel",
@@ -81,11 +81,11 @@
       "tfw:ore_micentean_buried",
       "tfw:ore_micentean_large"
     ],
-    [],
     [
-      "minecraft:spring_water",
-      "minecraft:spring_lava",
-      "tfw:snow_layers_fix_feature"
+
+    ],
+    [
+
     ],
     [
 

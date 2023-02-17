@@ -41,7 +41,7 @@
       "height_rand_b": 10
     },
     "foliage_placer": {
-      "type": "minecraft:mod_tadacia_foliage_placer",
+      "type": "minecraft:mod_burnt_tadacia_foliage_placer",
       "radius": 1,
       "offset": 0,
       "height": 2

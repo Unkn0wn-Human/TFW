@@ -9,16 +9,25 @@ import net.isaacj.tfw.item.ModItemGroups;
 import net.isaacj.tfw.world.feature.tree.BlueSyphSaplingGenerator;
 import net.isaacj.tfw.world.feature.tree.BurntTadaciaSaplingGenerator;
 import net.isaacj.tfw.world.feature.tree.SyphSaplingGenerator;
+import net.isaacj.tfw.world.feature.tree.TadaciaSaplingGenerator;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.BlockHalf;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.EnumProperty;
+import net.minecraft.state.property.Properties;
+import net.minecraft.state.property.Property;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.world.gen.feature.util.CaveSurface;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 
 public class ModBlocks {
+
 
     public static final Block REDSTONE_INFUSED_OBSIDIAN = registerBlock("redstone_infused_obsidian",
             new RedstoneInfusedObsidianBlock(FabricBlockSettings.of(Material.STONE).strength(50f, 6000f ).requiresTool()
@@ -41,6 +50,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).sounds(BlockSoundGroup.SNOW).strength(0.4f, 2f )),
             ModItemGroups.TFW);
 
+    public static final Block COMPACT_SNOW_TADACIA = registerBlock("compact_snow_tadacia",
+            new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).sounds(BlockSoundGroup.SNOW).strength(0.4f, 2f )),
+            ModItemGroups.TFW);
 
 
     public static final Block TADACIA_LOG = registerBlock("tadacia_log",
@@ -55,6 +67,10 @@ public class ModBlocks {
 
     public static final Block BURNT_TADACIA_SAPLING = registerBlock("burnt_tadacia_sapling",
             new ModSaplingBlock(new BurntTadaciaSaplingGenerator(),
+                    FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroups.TFW);
+
+    public static final Block TADACIA_SAPLING = registerBlock("tadacia_sapling",
+            new ModSaplingBlock(new TadaciaSaplingGenerator(),
                     FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroups.TFW);
 
     public static final Block BURNT_TADACIA_LEAVES = registerBlock("burnt_tadacia_leaves",
@@ -88,6 +104,29 @@ public class ModBlocks {
 
     public static final Block MICENTEAN_BLOCK = registerBlock("micentean_block",
             new Block(FabricBlockSettings.copy(Blocks.IRON_BLOCK)), ModItemGroups.TFW);
+
+    public static final Block PURPLE_SAND = registerBlock("purple_sand" ,
+            new SandBlock(11968731, FabricBlockSettings.copy(Blocks.SAND)),ModItemGroups.TFW);
+
+
+
+    public static final Block FROST_BLOOM = registerBlock("frost_bloom",
+            new FrostBloomBlock(FabricBlockSettings.copy(Blocks.KELP).luminance((state) -> 7
+            )), ModItemGroups.TFW);
+
+
+
+    public static final Block FROST_BLOOM_PLANT = registerBlockWithoutBlockItem("frost_bloom_plant",
+           new ModFrostBloomPlantBlock(FabricBlockSettings.copy(Blocks.KELP_PLANT)));
+
+    public static final Block VENTIAN = registerBlock("ventian",
+            new SeagrassBlock(FabricBlockSettings.copy(Blocks.KELP_PLANT)),ModItemGroups.TFW);
+
+    public static final Block BLUELEAF_THETTLE = registerBlock("blueleaf_thettle",
+            new ThettleBlock(FabricBlockSettings.copy(Blocks.AZALEA)), ModItemGroups.TFW);
+
+    public static final Block SMALL_BLUELEAF_THETTLE = registerBlock("small_blueleaf_thettle",
+            new SmallThettleBlock(FabricBlockSettings.copy(Blocks.OAK_SAPLING)), ModItemGroups.TFW);
 
 
 
