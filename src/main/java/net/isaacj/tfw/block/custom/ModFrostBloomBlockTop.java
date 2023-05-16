@@ -11,6 +11,7 @@ import net.minecraft.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
@@ -18,8 +19,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Random;
 
-public class FrostBloomBlock extends PlantBlock implements Fertilizable, FluidFillable {
-    public FrostBloomBlock(Settings settings) {
+public class ModFrostBloomBlockTop extends PlantBlock implements Fertilizable, FluidFillable {
+    public ModFrostBloomBlockTop(Settings settings) {
         super(settings);
     }
 

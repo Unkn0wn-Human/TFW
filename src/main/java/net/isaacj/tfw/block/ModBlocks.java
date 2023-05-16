@@ -111,13 +111,15 @@ public class ModBlocks {
 
 
     public static final Block FROST_BLOOM = registerBlock("frost_bloom",
-            new FrostBloomBlock(FabricBlockSettings.copy(Blocks.KELP).luminance((state) -> 7
-            )), ModItemGroups.TFW);
+            new FrostBloomBlock(FabricBlockSettings.copy(Blocks.KELP).luminance((state) -> 7)), ModItemGroups.TFW);
 
 
+    public static final Block RUBBERMOSS = registerBlock("rubbermoss",
+            new RubbermossBlock(FabricBlockSettings.copy(Blocks.AZALEA).nonOpaque()), ModItemGroups.TFW);
 
-    public static final Block FROST_BLOOM_PLANT = registerBlockWithoutBlockItem("frost_bloom_plant",
-           new ModFrostBloomPlantBlock(FabricBlockSettings.copy(Blocks.KELP_PLANT)));
+
+    public static final Block FROST_BLOOM_PLANT = registerBlock("frost_bloom_plant",
+           new ModFrostBloomBlockTop(FabricBlockSettings.copy(Blocks.KELP_PLANT)), ModItemGroups.TFW);
 
     public static final Block VENTIAN = registerBlock("ventian",
             new SeagrassBlock(FabricBlockSettings.copy(Blocks.KELP_PLANT)),ModItemGroups.TFW);

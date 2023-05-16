@@ -32,13 +32,15 @@
   "features": [
     [],
     [
+      "tfw:frozen_warm_ocean_spread",
+      "tfw:frozen_warm_ocean_large_spread"
+
+    ],
+    [
       "tfw:snow_layers_feature",
       "tfw:snow_layers_fix_feature",
       "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface"
-    ],
-    [
-
+      "minecraft:lake_lava_surface",
       "minecraft:amethyst_geode"
     ],
     [

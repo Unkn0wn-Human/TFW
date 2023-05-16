@@ -32,6 +32,7 @@
   "features": [
     [],
     [
+      "tfw:frozen_warm_ocean_spread",
       "tfw:snow_layers_feature",
       "tfw:snow_layers_fix_feature",
       "minecraft:lake_lava_underground",
@@ -88,6 +89,7 @@
       "minecraft:spring_lava"
     ],
     [
+
     ],
     [
     ]

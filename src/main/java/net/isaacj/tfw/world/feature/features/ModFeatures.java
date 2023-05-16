@@ -15,6 +15,11 @@ public class ModFeatures {
     public static final Feature<DefaultFeatureConfig> SNOW_LAYERS_FIX = register("snow_layers_fix_feature", new
             SnowLayersFixFeature(DefaultFeatureConfig.CODEC));
 
+    public static final Feature<DefaultFeatureConfig> FROZEN_WARM_OCEAN_SPREAD = register("frozen_warm_ocean_spread", new
+            FrozenWarmOceanSpreadFeature(DefaultFeatureConfig.CODEC));
+
+    public static final Feature<DefaultFeatureConfig> FROZEN_WARM_OCEAN_LARGE_SPREAD = register("frozen_warm_ocean_large_spread", new
+            FrozenWarmOceanLargeSpreadFeature(DefaultFeatureConfig.CODEC));
 
 
     private static <T extends Feature<?>> T register(String name, T entry) {
