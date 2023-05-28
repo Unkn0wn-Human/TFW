@@ -7,8 +7,6 @@
     "FluidMixin",
     "HeartTypeMixin",
     "InGameHudMixin",
-    "MixinBiome",
-    "MixinServerWorld",
     "ModFoliagePlacerMixin$FoliagePlacerTypeInvoker",
     "ModHeightmap",
     "ModTrunkPlacerMixin$TrunkPlacerTypeInvoker",

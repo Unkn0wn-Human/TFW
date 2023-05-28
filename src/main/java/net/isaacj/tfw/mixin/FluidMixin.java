@@ -36,14 +36,12 @@ public abstract class FluidMixin extends Block {
             if (world.getBiome(pos).isIn(CustomBiomeTags.IS_FROZEN) && pos.getY() > -10) {
                 if (fluid.matchesType(Fluids.WATER)) {
                     // Freeze water into ice
-                    if (random.nextInt(100) < 4) { // 4% chance per random tick
-                        world.setBlockState(pos, Blocks.ICE.getDefaultState());
-                    }
+                    // Schedule a block update to change the block to ice
+                    world.createAndScheduleBlockTick(pos, Blocks.ICE, random.nextInt(1));
+
                 } else if (fluid.matchesType(Fluids.LAVA)) {
                     // Solidify lava into obsidian
-                    if (random.nextInt(100) < 2) { // 2% chance per random tick
-                        world.setBlockState(pos, Blocks.OBSIDIAN.getDefaultState());
-                    }
+                    world.createAndScheduleBlockTick(pos, Blocks.OBSIDIAN, random.nextInt(2));
                 }
             }
         }

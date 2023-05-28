@@ -21,6 +21,8 @@ public class ModFeatures {
     public static final Feature<DefaultFeatureConfig> FROZEN_WARM_OCEAN_LARGE_SPREAD = register("frozen_warm_ocean_large_spread", new
             FrozenWarmOceanLargeSpreadFeature(DefaultFeatureConfig.CODEC));
 
+    public static final Feature<DefaultFeatureConfig> ICE_MOUND_FEATURE = register("ice_mound_feature", new
+            IceMoundFeature(DefaultFeatureConfig.CODEC));
 
     private static <T extends Feature<?>> T register(String name, T entry) {
         return Registry.register(Registry.FEATURE, TFWmod.id(name), entry);
